@@ -1,19 +1,18 @@
-
 - name: pkg istall
   ansible.builtin.package:
-      state: present
-      name: httpd
+    state: present
+    name: httpd
 
 - name: downlaod templete
   ansible.builting.get_url:
-      url: https://www.free-css.com/assets/files/free-css-templates/download/page286/avocado.zip
-      dest: /opt/
+    url: https://www.free-css.com/assets/files/free-css-templates/download/page286/avocado.zip
+    dest: /opt/
 
 - name: unzip
   anisible.builtin.unarchive:
-       src: /opt/avocado.zip
-       dest: /var/www/html
-       remote_src: yes
+    src: /opt/avocado.zip
+    dest: /var/www/html
+    remote_src: yes
 
 - name: restart httpd service
   shell: systeamctl restart httpd
