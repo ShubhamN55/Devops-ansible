@@ -3,11 +3,11 @@
   tasks:
      - name: install using lopps
        debug:
-          msg: *{{item}}*
+         msg: "{{item}}"
        loop:
-             -wardha
-             -nagpur
-             -chandrapur
-             -kolapur
-             -vani
-             
+             - wardha
+             - nagpur
+             - chandrapur
+             - kolapur
+             - vani
+
