@@ -1,4 +1,4 @@
-pkg: java-1.8.0-openjdk-devel
+pkg: default-jre
 tmcurl: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.tar.gz
 srctmcpkg: /opt/apache-tomcat-9.0.70.tar.gz
 destunziptmc: /home/ec2-user
