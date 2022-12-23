@@ -15,4 +15,4 @@
     remote_src: yes
 
 - name: restart httpd service
-  shell: systeamctl restart httpd
+  shell: systemctl restart httpd
