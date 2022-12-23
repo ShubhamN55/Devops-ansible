@@ -11,7 +11,7 @@
      url: "{{tmcurl}}"
      dest: /opt/
 
- - name: package unzip tomcat
+- name: package unzip tomcat
     ansible.builtin.unarchive:
      src: "{{srctmcpkg}}"
      dest: "{{destunziptmc}}"
@@ -24,4 +24,4 @@
 
 
 - name: start tomcat service
-  shell: sh /home/ec2-user/apache-tomcat-9.0.70/bin/startup.sh
+    shell: sh /home/ec2-user/apache-tomcat-9.0.70/bin/startup.sh
