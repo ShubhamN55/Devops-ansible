@@ -1,0 +1,6 @@
+pkg: openjdk-11-jre-headless
+tmcurl: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.tar.gz
+srctmcpkg: /opt/apache-tomcat-9.0.70.tar.gz
+destunziptmc: /home/ec2-user
+student.war: https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war
+deststudentwar: /home/ec2-user/apache-tomcat-9.0.70/webapps
