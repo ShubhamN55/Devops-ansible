@@ -19,9 +19,8 @@
 
 - name: download student.war
   ansible.builtin.get_url:
-     url: "{{studentwar}}"
-     dest: "{{deststudentwar}}"
-
+    url: "{{studentwar}}"
+    dest: "{{deststudentwar}}"
 
 - name: start tomcat service
-  shell: sh /home/ec2-user/apache-tomcat-9.0.70/bin/startup.sh
+  shell: sh /home/ec2-user/apache-tomcat-9.0.70/bin/startup.sh 
