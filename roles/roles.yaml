@@ -1,0 +1,6 @@
+- name:
+  host:
+  become: yes
+  tasks:
+   -webserver
+   -appserver
