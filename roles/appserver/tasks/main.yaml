@@ -7,20 +7,20 @@
   shell: apt update
 
 - name: package download tomcat
-  ansible.builtin.get_url:
-    url: "{{tmcurl}}"
-    dest: /opt/
+    ansible.builtin.get_url:
+     url: "{{tmcurl}}"
+     dest: /opt/
 
  - name: package unzip tomcat
     ansible.builtin.unarchive:
-    src: "{{srctmcpkg}}"
-    dest: "{{destunziptmc}}"
-    remote_src: yes 
-    
+     src: "{{srctmcpkg}}"
+     dest: "{{destunziptmc}}"
+     remote_src: yes 
+
 - name: download student.war
     ansible.builtin.get_url:
-    url: "{{student.war}}"
-    dest: "{{deststudentwar}}"
+     url: "{{student.war}}"
+     dest: "{{deststudentwar}}"
 
 
 - name: start tomcat service
