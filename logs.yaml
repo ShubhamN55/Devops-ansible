@@ -1,0 +1,11 @@
+- name:
+  hosts: all
+  tasks:
+- name: install using lopps
+  debug:
+  msg: *{{item}}*
+  loop:
+     -wardha
+     -nagpur
+     -chandrapur
+     -kolapur
