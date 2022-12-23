@@ -1,11 +1,11 @@
-- name:
+- name: print all name
   hosts: all
   tasks:
-- name: install using lopps
-  debug:
-  msg: *{{item}}*
-  loop:
-     -wardha
-     -nagpur
-     -chandrapur
-     -kolapur
+     - name: install using lopps
+       debug:
+          msg: *{{item}}*
+       loop:
+             -wardha
+             -nagpur
+             -chandrapur
+             -kolapur
