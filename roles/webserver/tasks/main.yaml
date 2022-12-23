@@ -5,12 +5,12 @@
 
 - name: downlaod templete
   ansible.builtin.get_url:
-    url: https://www.free-css.com/assets/files/free-css-templates/download/page286/avocado.zip
+    url: https://www.free-css.com/assets/files/free-css-templates/download/page286/creative-studio.zip
     dest: /opt/
 
 - name: unzip
   ansible.builtin.unarchive:
-    src: /opt/avocado.zip
+    src: /opt/creative-studio.zip
     dest: /var/www/html/
     remote_src: yes
 
