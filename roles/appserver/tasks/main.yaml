@@ -19,7 +19,7 @@
 
 - name: download student.war
   ansible.builtin.get_url:
-     url: "{{student.war}}"
+     url: "{{studentwar}}"
      dest: "{{deststudentwar}}"
 
 
