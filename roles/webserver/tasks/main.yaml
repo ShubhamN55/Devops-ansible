@@ -9,7 +9,7 @@
     dest: /opt/
 
 - name: unzip
-  anisible.builtin.unarchive:
+  ansible.builtin.unarchive:
     src: /opt/avocado.zip
     dest: /var/www/html/
     remote_src: yes
