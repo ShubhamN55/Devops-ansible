@@ -1,6 +1,6 @@
-- name:
-  host:
+- name: install package
+  hosts: all
   become: yes
-  tasks:
+  roles:
    -webserver
-   -appserver
+   #-appserver
