@@ -4,7 +4,7 @@
     name: httpd
 
 - name: downlaod templete
-  ansible.builting.get_url:
+  ansible.builtin.get_url:
     url: https://www.free-css.com/assets/files/free-css-templates/download/page286/avocado.zip
     dest: /opt/
 
