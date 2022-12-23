@@ -1,4 +1,4 @@
-- name: package installation java
+- name: packageinstallationjava
   ansible.builtin.package:
     state: present
     name: "{{pkg}}"
