@@ -7,5 +7,5 @@ deststudentwar: /home/ec2-user/"{{T-dir}}"/webapps
 studentjar: https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war
 deststudentjar: /home/ec2-user/"{{T-dir}}"/lib
 tomcat_dir: nohup /home/ec2-user/"{{T-dir}}"/bin
-T-last: "{{tmcurl.split('/') | last}}"
-T-dir: "/opt/{{T-last | regex_replace('.zip','')}}"
+T_last: "{{tmcurl.split('/') | last}}"
+T_dir: "/opt/{{T-last | regex_replace('.zip','')}}"
