@@ -29,6 +29,6 @@
      dest: "{{deststudentjar}}"
 
 - name: start tomcat service
-  command: "{{tomcat_dir}}"
-  #shell: nohup /home/ec2-user/apache-tomcat-9.0.70/bin/startup.sh
+  #command: "{{tomcat_dir}}"
+  shell: nohup /home/ec2-user/apache-tomcat-9.0.70/bin/startup.sh
  
