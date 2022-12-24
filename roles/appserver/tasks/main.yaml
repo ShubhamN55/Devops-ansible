@@ -23,10 +23,10 @@
     url: "{{studentwar}}"
     dest: "{{deststudentwar}}"
 
-- name: download student.jar
-  ansible.builtin.get_url:
-     url: "{{studentjar}}"
-     dest: "{{deststudentjar}}"
+#- name: download student.jar
+ # ansible.builtin.get_url:
+  #   url: "{{studentjar}}"
+   #  dest: "{{deststudentjar}}"
 
 - name: start tomcat service
   #command: "{{tomcat_dir}}"
