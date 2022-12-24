@@ -18,12 +18,12 @@
      mode: 0775
      remote_src: yes 
 
-- name: download student.war
+- name: download studentwar
   ansible.builtin.get_url:
     url: "{{studentwar}}"
     dest: "{{deststudentwar}}"
 
 - name: start tomcat service
   shell: nohup /home/ec2-user/apache-tomcat-9.0.70/bin/startup.sh
-  
+
  
